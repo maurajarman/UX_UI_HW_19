@@ -1,0 +1,178 @@
+.navigation {
+    display: inline-block;
+    vertical-align: top;
+    width: 73%;
+    padding: 1%;
+}
+
+.custom-navbar-bg {
+    background-color: #3B6064; 
+    
+}
+
+.nav-link {
+    color: white; 
+}
+
+.nav-item {
+    color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero-image {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.content {
+   width: 500px;
+   margin: 0 auto; 
+}
+
+
+.mySkills {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 50px;
+}
+
+.col {
+    text-align: center;
+    padding: 50px;
+}
+
+.mySkills > .flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 50px;
+}
+
+.mySkills > .flexContainer > div {
+    width: 33%;
+    margin-right: 50px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+
+
+.mySkills > .flexContainer > div > h3 {
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 50px;
+}
+
+.flexContainer > div {
+    width: 33%;
+    margin-right: 50px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+}
+
+.flexContainer > div > h3 {
+    font-size: 18px;
+    margin-bottom: 10px; 
+    align-items: center;
+}
+
+
+.flexContainer > div > ul {
+    list-style-type: circle;
+    padding: 20px;
+}
+
+.flexContainer > div > ul > li {
+    margin-bottom: 5px; 
+}
+
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 20px; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.workItem {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.workItem > div:first-child {
+    flex: 1; 
+    padding-bottom: 20px; 
+}
+
+.workItem img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+}
+
+
+.footer {
+    background-color: white;
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+ul.footer {
+    display: inline-block;
+    vertical-align: top; 
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .mySkills .flexContainer {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .mySkills .flexContainer > div {
+        width: 100%;
+        margin-right: 0; 
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "project1"
+            "project2";
+        
+    }
+}
