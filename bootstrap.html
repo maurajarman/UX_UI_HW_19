@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="images/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Maura Jarman UX/UI Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg custom-navbar-bg">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="images/Maura.png" alt="Maura's Logo" width="80" height="45">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link scroll-to-projects" href="#myWork">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/Maura.png" alt="Maura's Logo" width="30" height="24">
+          </a>
         </div>
-    </div>
-</nav>
-
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 <section class="heroImg">
     <div class="container text-center">
-      <div class="row">
+      <div class="row align-items-start">
         <div class="col">
           <h1>Hi, I am Maura, a UX/UI Designer</h1>
           <p>I excel at resolving challenges by employing empathy-driven design to connect business and users' needs seamlessly.</p>
         <p>I have developed three distinct design solutions that address user problems in innovative and individualized ways.</p>
         </div>
         <div class="col">
-        <img src="images/IMG_3238.jpeg" alt="Maura's Profile Photo" class="hero-image" width="300" height="300">
+        <img src="images/IMG_3238.jpeg" alt="Maura's Profile Photo" class="hero-image">
         </div>
       </div>
     </div>
 </section>
-
-<section class="mySkills">
-    <h1> My UX Skills </h1>
-    <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col">
+    <section class="mySkills">
+        <h1> My UX Skills </h1>
+        <div class="flexContainer">
+            <div> 
                 <h3> Technical skills </h3>
                 <ul>
                     <li>Heuristic Evaluation</li>
@@ -69,9 +72,8 @@
                     <li>Usability Testing</li>
                 </ul>
             </div>
-
-          <div class="col">
-            <h3> Soft skills </h3>
+            <div> 
+                <h3> Soft skills </h3>
                 <ul>
                     <li>Empathy</li>
                     <li>Communication</li>
@@ -80,22 +82,20 @@
                     <li>Critical Thinking</li>
                     <li>Adaptability</li>
                 </ul>
-          </div>
-          <div class="col">
-            <h3> Tools </h3>
-            <ul>
-                <li>Figma</li>
-                <li>HTML</li>
-                <li>CSS</li> 
-                <li>Bootstrap</li>          
-            </ul>
-          </div>
+            </div>
+            <div> 
+                <h3> Tools </h3>
+                <ul>
+                    <li>Figma</li>
+                    <li>HTML</li>
+                    <li>CSS</li>           
+                </ul>
+            </div>
         </div>
-      </div>
-      </section>
+    </section>
 
-    <section id="myWork">
-        <h1 class="text-center">My Work</h1>
+    <section class="myWork">
+        <h1>My Work</h1>
         <div class="workGrid">
             <div class="workItem">
                 <div class="container text-center">
@@ -107,7 +107,7 @@
                         <h3 class="text-left">GR!DC Website Redesign</h3>
                         <p class="text-left">Role: UX/UI Designer</p>
                         <p class="text-left">Focus: RWD, UI Navigation, User Research</p>
-                        <button type="button" class="btn btn-primary">View Project</button>
+                        <button>View Project</button>
                       </div>
                     </div>
                   </div>
@@ -121,7 +121,7 @@
                         <h3>Department of Education Website Redesign</h3>
                         <p>Role: UX/UI Designer</p>
                         <p>Focus: RWD, UI Navigation, User Research</p>
-                        <button type="button" class="btn btn-primary">View Project</button>
+                        <button>View Project</button>
                       </div>
                     </div>
                   </div>
@@ -139,9 +139,5 @@
             <li>Zoom</li>
         </ul>
     </footer>
-    
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
 </html>

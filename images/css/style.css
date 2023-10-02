@@ -18,6 +18,10 @@
     color: white;
 }
 
+.ml-auto {
+    margin-left: auto !important;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -25,11 +29,9 @@ ul {
 }
 
 
-.hero-image {
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
+.hero-image img {
+    max-width: 100%;
+    max-height: 300px; /* Adjust the height as needed */
 }
 
 .content {
