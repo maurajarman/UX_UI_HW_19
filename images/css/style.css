@@ -11,7 +11,12 @@
 }
 
 .nav-link {
+    color: white
+}
+
+.nav-link:hover {
     color: white; 
+    text-decoration: underline;
 }
 
 .nav-item {
@@ -50,6 +55,10 @@ ul {
 .col {
     text-align: center;
     padding: 50px;
+}
+
+.btn btn-priary{
+    color: #3B6064
 }
 
 .mySkills > .flexContainer {
@@ -142,9 +151,12 @@ ul {
     max-height: 200px; 
 }
 
-
+.text-left {
+    text-align: left;
+}
 .footer {
-    background-color: white;
+    background-color: #3B6064;
+    color: white;
     vertical-align: bottom;
     width: 100%;
     max-width: 100%;
@@ -157,6 +169,18 @@ ul.footer {
     display: inline-block;
     vertical-align: top; 
     padding-bottom: 50px;
+}
+
+.footer-link {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+    display: block;
+}
+
+.footer-link:hover {
+    color: white; 
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
